@@ -96,17 +96,21 @@ heroku pg:psql
         relevant BOOL
     );
     ```
-    c. Get entries from the `tech` table by running the following command:
+    c. Check the details of the `tech` table by running the following command:
+    ```
+    \d tech;
+    ```
+    d. Get entries from the `tech` table by running the following command:
     ```
     SELECT * FROM tech;
     ```
     You must manually copy the entries to a new / existing `JSON` file that contains the dataset collected from running the training command.
 
-    d. Delete all entries from the `tech` table by running the following command:
+    e. Delete all entries from the `tech` table by running the following command:
     ```
     DELETE FROM tech;
     ```
-    e. Delete the `tech` table by running the following command:
+    f. Delete the `tech` table by running the following command:
     ```
     DELETE TABLE tech;
     ```
